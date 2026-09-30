@@ -3,6 +3,8 @@
 package veed
 
 type services struct {
+	// CleanAudio accesses the clean-audio model.
+	CleanAudio *CleanAudioService
 	// Fabric accesses the fabric-1.0 model.
 	Fabric *FabricService
 	// Lipsync20 accesses the lipsync-2.0 model.
@@ -16,6 +18,7 @@ type services struct {
 }
 
 func (c *Client) initServices() {
+	c.CleanAudio = &CleanAudioService{client: c}
 	c.Fabric = &FabricService{client: c}
 	c.Lipsync20 = &Lipsync20Service{client: c}
 	c.VideoBackgroundRemoval = &VideoBackgroundRemovalService{client: c}
