@@ -13,13 +13,14 @@ import (
 type Lipsync20JobErrorCode string
 
 const (
-	Lipsync20JobErrorCodeInputValidation   Lipsync20JobErrorCode = "input_validation"
-	Lipsync20JobErrorCodeContentModeration Lipsync20JobErrorCode = "content_moderation"
-	Lipsync20JobErrorCodeInvalidFile       Lipsync20JobErrorCode = "invalid_file"
-	Lipsync20JobErrorCodeAudioTooLong      Lipsync20JobErrorCode = "audio_too_long"
-	Lipsync20JobErrorCodeTransloadFailed   Lipsync20JobErrorCode = "transload_failed"
-	Lipsync20JobErrorCodeGenerationFailed  Lipsync20JobErrorCode = "generation_failed"
-	Lipsync20JobErrorCodeTimeout           Lipsync20JobErrorCode = "timeout"
+	Lipsync20JobErrorCodeInputValidation     Lipsync20JobErrorCode = "input_validation"
+	Lipsync20JobErrorCodeContentModeration   Lipsync20JobErrorCode = "content_moderation"
+	Lipsync20JobErrorCodeInvalidFile         Lipsync20JobErrorCode = "invalid_file"
+	Lipsync20JobErrorCodeAudioTooLong        Lipsync20JobErrorCode = "audio_too_long"
+	Lipsync20JobErrorCodeTransloadFailed     Lipsync20JobErrorCode = "transload_failed"
+	Lipsync20JobErrorCodeGenerationFailed    Lipsync20JobErrorCode = "generation_failed"
+	Lipsync20JobErrorCodeTimeout             Lipsync20JobErrorCode = "timeout"
+	Lipsync20JobErrorCodeInsufficientCredits Lipsync20JobErrorCode = "insufficient_credits"
 )
 
 // Lipsync20Input holds the inputs for a lipsync-2.0 job.

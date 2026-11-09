@@ -21,13 +21,14 @@ const (
 type CleanAudioJobErrorCode string
 
 const (
-	CleanAudioJobErrorCodeInputValidation   CleanAudioJobErrorCode = "input_validation"
-	CleanAudioJobErrorCodeContentModeration CleanAudioJobErrorCode = "content_moderation"
-	CleanAudioJobErrorCodeInvalidFile       CleanAudioJobErrorCode = "invalid_file"
-	CleanAudioJobErrorCodeAudioTooLong      CleanAudioJobErrorCode = "audio_too_long"
-	CleanAudioJobErrorCodeTransloadFailed   CleanAudioJobErrorCode = "transload_failed"
-	CleanAudioJobErrorCodeGenerationFailed  CleanAudioJobErrorCode = "generation_failed"
-	CleanAudioJobErrorCodeTimeout           CleanAudioJobErrorCode = "timeout"
+	CleanAudioJobErrorCodeInputValidation     CleanAudioJobErrorCode = "input_validation"
+	CleanAudioJobErrorCodeContentModeration   CleanAudioJobErrorCode = "content_moderation"
+	CleanAudioJobErrorCodeInvalidFile         CleanAudioJobErrorCode = "invalid_file"
+	CleanAudioJobErrorCodeAudioTooLong        CleanAudioJobErrorCode = "audio_too_long"
+	CleanAudioJobErrorCodeTransloadFailed     CleanAudioJobErrorCode = "transload_failed"
+	CleanAudioJobErrorCodeGenerationFailed    CleanAudioJobErrorCode = "generation_failed"
+	CleanAudioJobErrorCodeTimeout             CleanAudioJobErrorCode = "timeout"
+	CleanAudioJobErrorCodeInsufficientCredits CleanAudioJobErrorCode = "insufficient_credits"
 )
 
 // CleanAudioInput holds the inputs for a clean-audio job.

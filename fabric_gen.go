@@ -21,13 +21,14 @@ const (
 type FabricJobErrorCode string
 
 const (
-	FabricJobErrorCodeInputValidation   FabricJobErrorCode = "input_validation"
-	FabricJobErrorCodeContentModeration FabricJobErrorCode = "content_moderation"
-	FabricJobErrorCodeInvalidFile       FabricJobErrorCode = "invalid_file"
-	FabricJobErrorCodeAudioTooLong      FabricJobErrorCode = "audio_too_long"
-	FabricJobErrorCodeTransloadFailed   FabricJobErrorCode = "transload_failed"
-	FabricJobErrorCodeGenerationFailed  FabricJobErrorCode = "generation_failed"
-	FabricJobErrorCodeTimeout           FabricJobErrorCode = "timeout"
+	FabricJobErrorCodeInputValidation     FabricJobErrorCode = "input_validation"
+	FabricJobErrorCodeContentModeration   FabricJobErrorCode = "content_moderation"
+	FabricJobErrorCodeInvalidFile         FabricJobErrorCode = "invalid_file"
+	FabricJobErrorCodeAudioTooLong        FabricJobErrorCode = "audio_too_long"
+	FabricJobErrorCodeTransloadFailed     FabricJobErrorCode = "transload_failed"
+	FabricJobErrorCodeGenerationFailed    FabricJobErrorCode = "generation_failed"
+	FabricJobErrorCodeTimeout             FabricJobErrorCode = "timeout"
+	FabricJobErrorCodeInsufficientCredits FabricJobErrorCode = "insufficient_credits"
 )
 
 // FabricInput holds the inputs for a fabric-1.0 job.

@@ -21,13 +21,14 @@ const (
 type VideoBackgroundRemovalJobErrorCode string
 
 const (
-	VideoBackgroundRemovalJobErrorCodeInputValidation   VideoBackgroundRemovalJobErrorCode = "input_validation"
-	VideoBackgroundRemovalJobErrorCodeContentModeration VideoBackgroundRemovalJobErrorCode = "content_moderation"
-	VideoBackgroundRemovalJobErrorCodeInvalidFile       VideoBackgroundRemovalJobErrorCode = "invalid_file"
-	VideoBackgroundRemovalJobErrorCodeAudioTooLong      VideoBackgroundRemovalJobErrorCode = "audio_too_long"
-	VideoBackgroundRemovalJobErrorCodeTransloadFailed   VideoBackgroundRemovalJobErrorCode = "transload_failed"
-	VideoBackgroundRemovalJobErrorCodeGenerationFailed  VideoBackgroundRemovalJobErrorCode = "generation_failed"
-	VideoBackgroundRemovalJobErrorCodeTimeout           VideoBackgroundRemovalJobErrorCode = "timeout"
+	VideoBackgroundRemovalJobErrorCodeInputValidation     VideoBackgroundRemovalJobErrorCode = "input_validation"
+	VideoBackgroundRemovalJobErrorCodeContentModeration   VideoBackgroundRemovalJobErrorCode = "content_moderation"
+	VideoBackgroundRemovalJobErrorCodeInvalidFile         VideoBackgroundRemovalJobErrorCode = "invalid_file"
+	VideoBackgroundRemovalJobErrorCodeAudioTooLong        VideoBackgroundRemovalJobErrorCode = "audio_too_long"
+	VideoBackgroundRemovalJobErrorCodeTransloadFailed     VideoBackgroundRemovalJobErrorCode = "transload_failed"
+	VideoBackgroundRemovalJobErrorCodeGenerationFailed    VideoBackgroundRemovalJobErrorCode = "generation_failed"
+	VideoBackgroundRemovalJobErrorCodeTimeout             VideoBackgroundRemovalJobErrorCode = "timeout"
+	VideoBackgroundRemovalJobErrorCodeInsufficientCredits VideoBackgroundRemovalJobErrorCode = "insufficient_credits"
 )
 
 // VideoBackgroundRemovalInput holds the inputs for a video-background-removal job.
